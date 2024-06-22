@@ -1,3 +1,15 @@
+@font-face {
+    font-family: gilroy-medium;
+    src: url(./Fonts/Gilroy-Medium.ttf);
+}
+@font-face {
+    font-family: gilroy-semibold;
+    src: url(./Fonts/Gilroy-SemiBold.ttf)
+}
+@font-face {
+    font-family: mazi;
+    src: url(./Fonts/Mazius-Extraitalic.121a71a7.ttf)
+}
 *{
     margin: 0;
     padding: 0;
@@ -7,12 +19,39 @@ html, body{
     height: 100%;
     width:100%;
 }
-.parent{
-    display: block;
-    overflow: hidden;
+#loader{
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    font-family: gilroy-medium;
 }
-.child{
-    display: block;
-    transform: translate(0, 0%);
-    background-color: yellow;
+#loader #topheading{
+    position: absolute;
+    top:2%;
+    left:50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+}
+
+#green{
+    height: 100vh;
+    width: 100%;
+    background-color: #14CF93;
+    position: absolute;
+    top: 100%;
+}
+#loader h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6vw;
+    font-family:  gilroy-medium;
+    font-weight: 500;
+}
+#loader h1>span{
+    color: #14CF93;
+    font-family: mazi;
+    /* font-weight: 00; */
 }
