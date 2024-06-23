@@ -83,12 +83,12 @@ html, body{
 #home{
     height: 200vh;
     width: 100%;
-    background-color: rgb(194, 99, 99);
+    /* background-color: rgb(194, 99, 99); */
 }
 nav{
     height: 8vh;
     width: 100%;
-    background-color: orange;
+    /* background-color: orange; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -132,4 +132,46 @@ nav a:hover #line2{
 }
 nav a:hover #line1{
     width: 100%;
+}
+#hero{
+    height: 100vh;
+    width: 100%;
+    /* background-color: red; */
+    font-family: gilroy-light;
+    padding: 2vw 5.2vw;
+    position: relative;
+    color: #383838;
+}
+#hero h1{
+    font-size: 12.5vw;
+}
+#hero-2 h2{
+    font-size: 12vw;
+    font-family: mazi;
+    margin-right: 2.5vw;
+    font-weight: 500;
+    color: #14CF93;
+}
+#hero-1{
+    display: flex;
+    /* background-color: orangered; */
+    justify-content: space-between;
+}
+#hero-1>h1{
+    display: flex;
+    /* background-color: orangered; */
+    justify-content: space-between;
+    margin-right: 5vw;
+}
+#hero-1 h5{
+    padding: 3.2vw;
+    opacity: 0.6;
+    font-size: 1vw;
+}
+#hero-2{
+    display: flex;
+    /* align-items: flex-start; */
+    /* background-color: olive; */
+    justify-content: flex-end;
+    margin: 0;
 }
