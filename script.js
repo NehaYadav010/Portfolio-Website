@@ -20,43 +20,54 @@ function revealToSpan(){
 }
 revealToSpan();
 
-//for left text movement of loader page (center element)
-gsap.from(".child span",{
-    x: 100,
-    duration: 1.4,
-    stagger: .2,
-    ease: Power3.easeInOut
-})
+function loaderAniamtion(){
 
-//for upward text movement of loader page
-gsap.to(".parent .child",{
-    y:"-100%",
-    duration: 2,
-    delay: 1,
-    ease: Circ.easeInOut
-})
+    //for left text movement of loader page (center element)
+    gsap.from(".child span",{
+        x: 100,
+        duration: 1.4,
+        stagger: .2,
+        ease: Power3.easeInOut
+    })
+    
+    //for upward text movement of loader page
+    gsap.to(".parent .child",{
+        y:"-100%",
+        duration: 2,
+        delay: 1,
+        ease: Circ.easeInOut
+    })
+    
+    // Create a timeline
+    const tl = gsap.timeline();
+    
+    // Add animations to the timeline
+    tl.to("#loader", {
+        height: "0%",
+        duration: 2,  // Loader stays for 2 seconds before shrinking
+        delay: 1.5,  // Delay to keep the loader on the screen for 2 seconds
+        ease: "circ.inOut"
+    })
+    .to("#green", {
+        height: "100%",
+        top: 0,
+        duration: 1,  // Green part enters in 1 second
+        delay: -0.8,
+        ease: "circ.inOut"
+    })
+    .to("#green", {
+        height: "0%",
+        duration: 1,  // Green part exits in 1 second
+        ease: "circ.inOut",
+        delay: -.5,
+    });
+}
+loaderAniamtion();
 
-// Create a timeline
-const tl = gsap.timeline();
-
-// Add animations to the timeline
-tl.to("#loader", {
-    height: "0%",
-    duration: 2,  // Loader stays for 2 seconds before shrinking
-    delay: 1.5,  // Delay to keep the loader on the screen for 2 seconds
-    ease: "circ.inOut"
+// PAGE 1 ANIMATION GSAP
+gsap.from("g path", {
+    strokeDasharray : 64.68521881103516,
+    strokeOffset : 64.68521881103516,
+    duration: 1,
+    ease: Power3
 })
-.to("#green", {
-    height: "100%",
-    top: 0,
-    duration: 1,  // Green part enters in 1 second
-    delay: -0.8,
-    ease: "circ.inOut"
-})
-.to("#green", {
-    height: "0%",
-    duration: 1,  // Green part exits in 1 second
-    ease: "circ.inOut",
-    delay: -.5,
-});
-

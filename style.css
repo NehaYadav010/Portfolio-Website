@@ -143,14 +143,8 @@ nav a:hover #line1{
     color: #383838;
 }
 #hero h1{
-    font-size: 12.5vw;
-}
-#hero-2 h2{
-    font-size: 12vw;
-    font-family: mazi;
-    margin-right: 2.5vw;
-    font-weight: 500;
-    color: #14CF93;
+    font-size: 13vw;    
+    /* opacity: 1; */
 }
 #hero-1{
     display: flex;
@@ -173,5 +167,13 @@ nav a:hover #line1{
     /* align-items: flex-start; */
     /* background-color: olive; */
     justify-content: flex-end;
-    margin: 0;
+    align-items: center;
+    height: 25vh;
+}
+#hero-2>svg{
+    height: 10vw;
+    margin-right: 0.8vw;
+}
+path, polyline{
+    stroke: #14CF93;
 }
