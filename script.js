@@ -6,11 +6,11 @@ function valueSetters(){
     gsap.set("#home span .child",{
         y: "100%",
     })
-    gsap.set("#home .row img",{
+    gsap.set("#home #hero #cursor",{
         opacity: 0
     })
 }
-valueSetters();
+
 
 function revealToSpan(){
     document.querySelectorAll(".reveal")
@@ -32,7 +32,7 @@ function revealToSpan(){
         elem.appendChild(parent);
     });
 }
-revealToSpan();
+
 
 function loaderAnimation(){
 
@@ -79,7 +79,7 @@ function loaderAnimation(){
         }
     });
 }
-loaderAnimation();
+
 
 function animateHomePage(){
     
@@ -90,4 +90,21 @@ function animateHomePage(){
         stagger: .04,
         ease: Expo.easeInOut
     })
+    .to("#home .parent .child",{
+        y:0,
+        stagger: .1,
+        duration: 1.5,
+        ease: Expo.easeInOut
+    })
+    .to("#home #hero #cursor",{
+        opacity: 1,
+        ease: Expo.easeInOut,
+        delay: -.5
+    })
+    
 }
+
+
+revealToSpan();
+valueSetters();
+loaderAnimation();
