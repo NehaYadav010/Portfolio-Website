@@ -1,3 +1,17 @@
+function valueSetters(){
+    gsap.set("nav a",{
+        y: "-100%",
+        opacity: 0
+    })
+    gsap.set("#home span .child",{
+        y: "100%",
+    })
+    gsap.set("#home .row img",{
+        opacity: 0
+    })
+}
+valueSetters();
+
 function revealToSpan(){
     document.querySelectorAll(".reveal")
     .forEach(function(elem){
@@ -20,10 +34,10 @@ function revealToSpan(){
 }
 revealToSpan();
 
-function loaderAniamtion(){
+function loaderAnimation(){
 
     //for left text movement of loader page (center element)
-    gsap.from(".child span",{
+    gsap.from("#loader .child span",{
         x: 100,
         duration: 1.4,
         stagger: .2,
@@ -31,7 +45,7 @@ function loaderAniamtion(){
     })
     
     //for upward text movement of loader page
-    gsap.to(".parent .child",{
+    gsap.to("#loader .parent .child",{
         y:"-100%",
         duration: 2,
         delay: 1,
@@ -60,14 +74,20 @@ function loaderAniamtion(){
         duration: 1,  // Green part exits in 1 second
         ease: "circ.inOut",
         delay: -.5,
+        onComplete : function(){
+            animateHomePage();
+        }
     });
 }
-loaderAniamtion();
+loaderAnimation();
 
-// PAGE 1 ANIMATION GSAP
-gsap.from("g path", {
-  strokeDasharray: 64.68521881103516,
-  strokeOffset: 64.68521881103516,
-  duration: 1,
-  ease: Power3,
-});
+function animateHomePage(){
+    
+    var tl = gsap.timeline();
+    tl.to("nav a",{
+        y:0,
+        opacity: 1,
+        stagger: .04,
+        ease: Expo.easeInOut
+    })
+}
