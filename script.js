@@ -66,8 +66,8 @@ loaderAniamtion();
 
 // PAGE 1 ANIMATION GSAP
 gsap.from("g path", {
-    strokeDasharray : 64.68521881103516,
-    strokeOffset : 64.68521881103516,
-    duration: 1,
-    ease: Power3
-})
+  strokeDasharray: 64.68521881103516,
+  strokeOffset: 64.68521881103516,
+  duration: 1,
+  ease: Power3,
+});
