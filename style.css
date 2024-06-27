@@ -19,6 +19,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+*::selection{
+    background-color: #383838;
+    color:#14CF93
+}
 html, body{
     height: 100%;
     width:100%;
@@ -169,6 +173,7 @@ nav a .line{
     bottom: 18%;
     /* border: 2px solid #14CF93; */
     background-color: #E6E5E3;
+    
     
 }
 #cursor i{
