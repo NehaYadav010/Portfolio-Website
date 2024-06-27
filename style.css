@@ -20,7 +20,7 @@
     box-sizing: border-box;
 }
 *::selection{
-    background-color: #383838;
+    background-color: #d2d2d2;
     color:#14CF93
 }
 html, body{
