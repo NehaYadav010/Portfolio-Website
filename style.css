@@ -187,4 +187,5 @@ nav a:hover #line2{
 }
 #cursor:hover{
     scale: 2;
+    transition: all ease .5s;
 }
