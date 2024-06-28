@@ -85,21 +85,21 @@ html, body{
 nav{
     height: 8vh;
     width: 100%;
-    /* background-color: orange; */
+    background-color: orange;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 3vw 5.2vw;
     font-family: gilroy-medium;
+    position: relative;
 }
 nav a{
     text-decoration: none;
     color: #000;
     font-size: 1vw;
     text-transform: uppercase;
-    position: relative;
     padding: 1.5px;
-
+    background-color: red;
 }
 nav a .line{
     width: 100%;
@@ -122,11 +122,11 @@ nav a .line{
     transition: all cubic-bezier(0.19, 1, 0.22, 1)  .1s;
 }
 
-#home nav a:hover #line2{
-    width: 0%;
-}
-#home nav a:hover #line1{
+nav a:hover #line1{
     width: 100%;
+}
+nav a:hover #line2{
+    width: 0%;
 }
 #hero{
     height: 100vh;

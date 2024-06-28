@@ -80,7 +80,6 @@ function loaderAnimation(){
     });
 }
 
-
 function animateHomePage(){
     
     var tl = gsap.timeline();
