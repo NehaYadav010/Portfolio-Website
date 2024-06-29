@@ -80,7 +80,7 @@ html, body{
 #home{
     min-height: 150vh;
     width: 100%;
-    background-color: rgb(194, 99, 99);
+    /* background-color: rgb(194, 99, 99); */
 }
 nav{
     height: 8vh;
@@ -195,19 +195,24 @@ nav a:hover #line2{
 #imagery{
     height: 70vh;
     width: 100%;
-    background-color: red;
+    /* background-color: red; */
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 0 7vw;
+    font-family: gilroy-medium;
+    font-size: 1.2vw;
+    line-height: 3vw;
 }
-#imager-left{
-    background-color: greenyellow;
-
+#imager-left h1>span{
+    /* background-color: greenyellow; */
+    color: #14CF93;
+    font-family: mazi;
+    letter-spacing: 0.1vw;
 }
 #imager-right img{
-    height: 30vw;
-    width: 22vw;
+    height: 35vw;
+    width: 25vw;
     border-radius: 1.5vw;
     object-fit: cover;
     object-position: top;
@@ -217,4 +222,10 @@ nav a:hover #line2{
 }
 #imager-right img:hover{
     filter: grayscale(0);
+}
+/* PROJECT SECTION*/
+#work{
+    height: 80vh;
+    width: 100%;
+    background-color: #F2F2F2;
 }
