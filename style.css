@@ -28,7 +28,7 @@ html, body{
     width:100%;
 }
 #loader{
-    /* display: none; */
+    display: none;
     height: 100vh;
     width: 100%;
     background-color: #000;
@@ -193,7 +193,7 @@ nav a:hover #line2{
 
 /*IMAGE SECTION*/
 #imagery{
-    height: 70vh;
+    height: 80vh;
     width: 100%;
     /* background-color: red; */
     display: flex;
@@ -203,6 +203,7 @@ nav a:hover #line2{
     font-family: gilroy-medium;
     font-size: 1.2vw;
     line-height: 3vw;
+    color: #383838;
 }
 #imager-left h1>span{
     /* background-color: greenyellow; */
@@ -216,7 +217,7 @@ nav a:hover #line2{
     border-radius: 1.5vw;
     object-fit: cover;
     object-position: top;
-    transform: translate(-20%, -10%) rotate(-10deg);
+    transform: translate(-10%, -20%) rotate(-10deg);
     filter: grayscale();
     transition: all ease 0.5s;
 }
@@ -228,4 +229,55 @@ nav a:hover #line2{
     height: 80vh;
     width: 100%;
     background-color: #F2F2F2;
+    position: relative;
+    display: flex;
+    margin-top: 10vw;
+}
+#work::before{
+    content: "";
+    width: 100%;
+    background-image:url(https://abhishekjha.me/rip.f6d7c4dd.svg);
+    background-position:center;
+    background-size:cover;
+    position: absolute;
+    height: 110px;
+    top: -75px;
+    transform: rotate(-180deg);
+}
+#work img{
+
+    height: 7vw;
+    transform: rotate(45deg);
+    /* background-color: red; */
+}
+#help{
+    margin-top: 11vw;
+    /* background-color: orange; */
+    width:85%;
+    height: 30vh;
+    margin-left: 5vw;
+    border-bottom: 1px solid #414141;
+    padding: 1vw;
+}
+#help h4{
+    font-family: gilroy-medium;
+    font-weight: 100;
+    text-wrap: nowrap;
+    font-size: 1.2vw;
+    color: #847D7D;
+    margin-bottom: 3vw;
+}
+#help h4>span{
+    color: #14CF93;
+    font-family: mazi;
+    font-weight: 600;
+}
+#help h1{
+    color: #414141;
+    font-size: 2vw;
+    font-weight: 550;
+    font-family: gilroy-medium;
+    /* background-color: red; */
+    width: 50%;
+    margin-top: 0.8vw;
 }
