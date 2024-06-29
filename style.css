@@ -34,7 +34,7 @@ html, body{
     background-color: #000;
     color: #fff;
     font-family: gilroy-medium;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 9999;
@@ -78,9 +78,9 @@ html, body{
 
 /*FIRST PAGE*/
 #home{
-    height: 200vh;
+    min-height: 150vh;
     width: 100%;
-    /* background-color: rgb(194, 99, 99); */
+    background-color: rgb(194, 99, 99);
 }
 nav{
     height: 8vh;
@@ -189,4 +189,32 @@ nav a:hover #line2{
 #cursor:hover{
     scale: 2;
     transition: all ease .5s;
+}
+
+/*IMAGE SECTION*/
+#imagery{
+    height: 70vh;
+    width: 100%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 7vw;
+}
+#imager-left{
+    background-color: greenyellow;
+
+}
+#imager-right img{
+    height: 30vw;
+    width: 22vw;
+    border-radius: 1.5vw;
+    object-fit: cover;
+    object-position: top;
+    transform: translate(-20%, -10%) rotate(-10deg);
+    filter: grayscale();
+    transition: all ease 0.5s;
+}
+#imager-right img:hover{
+    filter: grayscale(0);
 }
