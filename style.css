@@ -85,7 +85,7 @@ html, body{
 nav{
     height: 8vh;
     width: 100%;
-    background-color: orange;
+    /* background-color: orange; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -99,7 +99,7 @@ nav a{
     font-size: 1vw;
     text-transform: uppercase;
     padding: 1.5px;
-    background-color: red;
+    /* background-color: red; */
 }
 nav a .line{
     width: 100%;
@@ -156,6 +156,7 @@ nav a:hover #line2{
     padding: 3.2vw;
     opacity: 0.6;
     font-size: 1vw;
+    /* background-color: rebeccapurple; */
 }
 #hero-2{
     display: flex;

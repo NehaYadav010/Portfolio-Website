@@ -103,6 +103,30 @@ function animateHomePage(){
     
 }
 
+function updateTime() {
+    // Get current time in UTC
+    const now = new Date();
+
+    // Calculate the time in India (UTC+5:30)
+    const indiaOffset = 5.5 * 60 * 60 * 1000;
+    const indiaTime = new Date(now.getTime() + indiaOffset);
+
+    // Format the time as HH:MM:SS
+    const hours = indiaTime.getUTCHours().toString().padStart(2, '0');
+    const minutes = indiaTime.getUTCMinutes().toString().padStart(2, '0');
+    
+
+    // Display the formatted time
+    document.getElementById('local-time').textContent = `${hours}:${minutes}`;
+}
+
+// Update the time every second
+setInterval(updateTime, 1000);
+
+// Initial call to display the time immediately on page load
+updateTime();
+
+
 
 revealToSpan();
 valueSetters();
