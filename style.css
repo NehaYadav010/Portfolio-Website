@@ -282,18 +282,18 @@ nav a:hover #line2{
     margin-top: 0.8vw;
 }
 #project{
-    height: 100vh;
+    height: 150vh;
     width: 100%;
     position: relative;
     background-color: #F2F2F2;
-    /* background-color: red; */
+    background-color: red;
 }
 #workflow{
     display: flex;
     align-items: baseline;
     justify-content: space-between;
     font-family: gilroy-light;
-    /* background-color: goldenrod; */
+    background-color: goldenrod;
 }
 #workflow img{
     height: 7vw;
