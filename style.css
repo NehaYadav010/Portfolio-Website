@@ -325,16 +325,22 @@ nav a:hover #line2{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background-color: rgb(186, 240, 188);
+    /* background-color: rgb(186, 240, 188); */
+    font-family: gilroy-semibold;
 }
   
 .githubTitle {
-    font-size: 100px;
+    font-size: 7vw;
     color: #333;
+}
+.githubTitle span{
+    color: #14CF93;
+    font-family: mazi;
+    font-weight: 600;
 }
   
 .githubChart {
-    /* width: 820px; */
+    width: 820px;
     width: 64.0625vw;
     text-align: center;
 }
@@ -355,6 +361,7 @@ nav a:hover #line2{
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
+    border: 1px solid black;
 }
   
 .box {
