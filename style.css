@@ -325,7 +325,7 @@ nav a:hover #line2{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background-color: rgb(0, 255, 8);
+    background-color: rgb(186, 240, 188);
 }
   
 .githubTitle {
@@ -334,7 +334,8 @@ nav a:hover #line2{
 }
   
 .githubChart {
-    width: 820px;
+    /* width: 820px; */
+    width: 64.0625vw;
     text-align: center;
 }
   
@@ -344,6 +345,10 @@ nav a:hover #line2{
     font-size: 12px;
     display: flex;
     justify-content: space-between;
+}
+.dates span{
+    font-weight: 600;
+    font-size: 1.2vw;
 }
   
 .boxContainer {
