@@ -320,23 +320,25 @@ nav a:hover #line2{
 
 /* GITHUB CONTAINER */
 .githubContainer {
-    height: 80vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     /* background-color: rgb(186, 240, 188); */
     font-family: gilroy-semibold;
+    color: #383838;
 }
   
 .githubTitle {
-    font-size: 7vw;
+    font-size: 6vw;
     color: #333;
 }
 .githubTitle span{
     color: #14CF93;
     font-family: mazi;
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 5vw;
 }
   
 .githubChart {
@@ -361,7 +363,7 @@ nav a:hover #line2{
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
   
 .box {
@@ -385,5 +387,25 @@ nav a:hover #line2{
 }
   
 .githubSm{
-    display: none;
+    /* background-color: red; */
+    display: flex;
+    text-align: center;
+    gap: 1vw;
+    /* border: 1px solid #000; */
+    border-radius: 5%;
+    padding: 0.5vw;
+    margin-top: 1vw;
+    font-size: 1.2vw;
+    text-decoration: none;
+}
+.githubSm img{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    object-position: center;
+    /* background-color: red; */
+}
+.githubSm a,h2{
+    text-decoration: none;
+    color: #383838;
 }
