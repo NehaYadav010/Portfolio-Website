@@ -424,10 +424,62 @@ nav a:hover #line2{
 
 /* CONTACT FORM */
 #contact{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
-    background-color: transparent;
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-top: 2vw;
 }
 #main{
     background-color: #14CF93;
 }
+
+#contact form{
+    width: 80%;
+    text-align: center;
+    /* border: 1px solid black; */
+    position: relative;
+    padding: 1vw;
+}
+form .input-box{
+    display: flex;
+    justify-content: space-around;
+}
+
+.field .item{
+    width: 100%;
+    background-color: red;
+    padding: 15px;
+    background: transparent;
+    border: 2px solid rgb(87, 173, 179);
+    outline: none;
+    border-radius: 22px;
+    font-size: 16px;
+    margin: 12px 0;
+}
+.input-box .input-field{
+    width: 44.5%;
+}
+form .textarea-field .item{
+    resize: none;
+}
+form button{
+    padding: 12px 32px;
+    background: rgb(87, 173, 179);
+    border: none;
+    outline: none;
+    border-radius: 22px;
+    box-shadow: 0 0 10px rgb(87, 173, 179);
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+}
+form button:hover{
+    box-shadow: none;
+}
+
