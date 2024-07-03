@@ -80,7 +80,7 @@ html, body{
 #home{
     min-height: 150vh;
     width: 100%;
-    /* background-color: rgb(194, 99, 99); */
+    background-color: #fbfbfb;
 }
 nav{
     height: 8vh;
@@ -321,6 +321,7 @@ nav a:hover #line2{
 #skills{
     height: 100vh;
     width:100%;
+    /* background-color: #F2F2F2; */
     background-color: pink;
     display: flex;
     align-items: center;
@@ -335,7 +336,8 @@ nav a:hover #line2{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    /* background-color: rgb(186, 240, 188); */
+    /* background-color: #F2F2F2; */
+    background-color: rgb(186, 240, 188);
     font-family: gilroy-semibold;
     color: #383838;
 }
@@ -418,4 +420,14 @@ nav a:hover #line2{
 .githubSm a,h2{
     text-decoration: none;
     color: #383838;
+}
+
+/* CONTACT FORM */
+#contact{
+    height: 100vh;
+    width: 100%;
+    background-color: transparent;
+}
+#main{
+    background-color: #14CF93;
 }
