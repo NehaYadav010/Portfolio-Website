@@ -465,6 +465,15 @@ form .input-box{
 }
 form .textarea-field .item{
     resize: none;
+    /* background-color: red; */
+}
+
+form .error-text{
+    font-size: 14.5px;
+    color: red;
+    text-align: left;
+    margin:  0 1.8vw;
+    display: none;
 }
 form button{
     padding: 12px 32px;
