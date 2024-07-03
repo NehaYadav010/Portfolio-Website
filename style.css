@@ -317,6 +317,16 @@ nav a:hover #line2{
     font-family: mazi;
     font-weight: 600;
 }
+/*SKILLS SECTION*/
+#skills{
+    height: 100vh;
+    width:100%;
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5vw;
+}
 
 /* GITHUB CONTAINER */
 .githubContainer {
