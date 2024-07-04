@@ -433,13 +433,14 @@ nav a:hover #line2{
     justify-content: center;
     position: relative;
     padding-top: 2vw;
+    font-family: gilroy-semibold;
 }
 #main{
     background-color: #14CF93;
 }
 
 #contact form{
-    width: 50%;
+    width: 45%;
     /* background-color: red; */
     text-align: center;
     border: 1px solid black;
@@ -448,11 +449,20 @@ nav a:hover #line2{
     margin-right: 3vw;
 }
 #contact h2{
-    background-color: gray;
+    /* background-color: gray; */
     position: absolute;
-    top: 50%;
-    left: 10%;
+    top: 20%;
+    left: 6%;
+    font-size: 5vw;
+    
 }
+#contact h2>span{
+    /* background-color: greenyellow; */
+    color: #14CF93;
+    font-family: mazi;
+    letter-spacing: 0.1vw;
+}
+
 form .input-box{
     display: flex;
     justify-content: space-around;
@@ -500,6 +510,14 @@ form button{
 form button:hover{
     box-shadow: none;
 }
+
+
+
+
+
+
+
+
 
 /* START EMAIL FROM 9:04 */
 
