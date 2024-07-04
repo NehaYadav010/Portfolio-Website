@@ -429,7 +429,8 @@ nav a:hover #line2{
     background-color: pink;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: self-end;
+    justify-content: center;
     position: relative;
     padding-top: 2vw;
 }
@@ -438,11 +439,19 @@ nav a:hover #line2{
 }
 
 #contact form{
-    width: 80%;
+    width: 50%;
+    /* background-color: red; */
     text-align: center;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     position: relative;
     padding: 1vw;
+    margin-right: 3vw;
+}
+#contact h2{
+    background-color: gray;
+    position: absolute;
+    top: 50%;
+    left: 10%;
 }
 form .input-box{
     display: flex;
@@ -461,7 +470,7 @@ form .input-box{
     margin: 12px 0;
 }
 .input-box .input-field{
-    width: 44.5%;
+    width: 40.5%;
 }
 form .textarea-field .item{
     resize: none;
@@ -486,9 +495,11 @@ form button{
     letter-spacing: 1px;
     font-weight: 600;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 0.1vw;
 }
 form button:hover{
     box-shadow: none;
 }
+
+/* START EMAIL FROM 9:04 */
 
