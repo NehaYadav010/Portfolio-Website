@@ -152,18 +152,34 @@ function github(){
 }
 
 const form = document.querySelector('form');
+const fullName = document.getElementById("name");
+const email = document.getElementById("email");
+const phone = document.getElementById("phone");
+const subject = document.getElementById("subject");
+const mess = document.getElementById("message");
 
 function sendEmail(){
+    const bodyMessage = `Full Name: ${fullName.value} <br>
+    Email: ${email.value} <br>
+    Phone: ${phone.value} <br>
+    Subject: ${subject.value} <br>
+    Message: ${mess.value}`
+
+
     Email.send({
         Host : "smtp.elasticemail.com",
         Username : "yadavneha594@gmail.com",
         Password : "479A7955B70E07CAE696F6BBE302099C4CA9",
         To : 'yadavneha594@gmail.com',
         From : "yadavneha594@gmail.com",
-        Subject : "This is the subject",
-        Body : "And this is the body"
+        Subject : subject.value,
+        Body : bodyMessage
     }).then(
-      message => alert(message)
+      message => {
+        if(message == "OK"){
+            
+        }
+      }
     );
 }
 
