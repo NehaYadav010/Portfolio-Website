@@ -187,6 +187,10 @@ function sendEmail(){
     );
 }
 
+// DOWNLOAD CV BUTTON
+document.getElementById('downloadCV').addEventListener('click', function() {
+    window.location.href = 'bibleofjs_by_sheryians.pdf';
+});
 
 
 
