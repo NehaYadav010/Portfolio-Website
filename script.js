@@ -176,8 +176,12 @@ function sendEmail(){
         Body : bodyMessage
     }).then(
       message => {
-        if(message == "OK"){
-            
+        if(message == 'OK'){
+            Swal.fire({
+                title: "Good job!",
+                text: "You clicked the button!",
+                icon: "success"
+              });
         }
       }
     );
