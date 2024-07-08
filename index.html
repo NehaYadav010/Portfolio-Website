@@ -119,9 +119,10 @@
 
             <!-- CONTACT FORM -->
         <div id="contact">
-            <h2>Let's Connect <br>
-                <span>and</span> Collaborate!</h2>
-            <form action="#">
+            <h2>Let's <span>Connect</span> <br>
+                and Collaborate</h2>
+            <!-- <form action="#"> -->
+            <form onsubmit="sendEmail(); reset(); return false;">
                 <div class="input-box">
                     <div class="input-field field">
                         <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off">
@@ -153,7 +154,8 @@
 
                 </div>
 
-                <button>Send Message</button>
+                <button type="submit">Send Message</button>
+                <!-- <h6>©2024 Abhishek Jha, All Rights Reserved • Credits</h6> -->
             </form>
         </div>
         
@@ -165,9 +167,9 @@
 
 
 
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <!-- <script src="script.js"></script> -->
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

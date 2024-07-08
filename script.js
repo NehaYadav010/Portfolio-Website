@@ -151,6 +151,24 @@ function github(){
       }
 }
 
+const form = document.querySelector('form');
+
+function sendEmail(){
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "yadavneha594@gmail.com",
+        Password : "479A7955B70E07CAE696F6BBE302099C4CA9",
+        To : 'yadavneha594@gmail.com',
+        From : "yadavneha594@gmail.com",
+        Subject : "This is the subject",
+        Body : "And this is the body"
+    }).then(
+      message => alert(message)
+    );
+}
+
+
+
 
 // Initial call to display the time immediately on page load
 
