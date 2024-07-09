@@ -192,6 +192,26 @@ document.getElementById('downloadCV').addEventListener('click', function() {
     window.location.href = 'bibleofjs_by_sheryians.pdf';
 });
 
+function skills(){
+    document.addEventListener('DOMContentLoaded', () => {
+        const skills = document.querySelectorAll('.skill');
+    
+        skills.forEach(skill => {
+            skill.addEventListener('mouseenter', () => {
+                skill.style.transform = 'scale(1.1)';
+                const img = skill.querySelector('img');
+                img.style.transform = 'scale(1.2)';
+            });
+    
+            skill.addEventListener('mouseleave', () => {
+                skill.style.transform = 'scale(1)';
+                const img = skill.querySelector('img');
+                img.style.transform = 'scale(1)';
+            });
+        });
+    });
+    
+}
 
 
 // Initial call to display the time immediately on page load
@@ -201,3 +221,4 @@ revealToSpan();
 valueSetters();
 loaderAnimation();
 github();
+skills();
