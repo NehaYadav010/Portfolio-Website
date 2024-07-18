@@ -21,7 +21,7 @@
 }
 *::selection{
     background-color: #d2d2d2;
-    color:#14CF93
+    color:#14CF93;
 }
 html, body{
     height: 100%;
@@ -226,12 +226,15 @@ nav a:hover #line2{
 }
 /* PROJECT SECTION*/
 #work{
-    height: 80vh;
+    height: 70vh;
     width: 100%;
     background-color: #F2F2F2;
+    /* background-color: blueviolet; */
+    font-family: gilroy-semibold;
     position: relative;
     display: flex;
     margin-top: 10vw;
+    padding-bottom: 1.5vw;
 }
 #work::before{
     content: "";
@@ -245,7 +248,6 @@ nav a:hover #line2{
     transform: rotate(-180deg);
 }
 #work img{
-
     height: 7vw;
     transform: rotate(45deg);
     /* background-color: red; */
@@ -256,8 +258,9 @@ nav a:hover #line2{
     width:85%;
     height: 30vh;
     margin-left: 5vw;
-    border-bottom: 1px solid #414141;
+    /* border-bottom: 1px solid #414141; */
     padding: 1vw;
+    padding-bottom: 1.5vw;
 }
 #help h4{
     font-family: gilroy-medium;
@@ -282,7 +285,7 @@ nav a:hover #line2{
     margin-top: 0.8vw;
 }
 #project{
-    height: 120vh;
+    height: 90vh;
     width: 100%;
     position: relative;
     background-color: #F2F2F2;
@@ -327,6 +330,7 @@ nav a:hover #line2{
     align-items: center;
     justify-content: center;
     font-size: 5vw;
+    font-family: gilroy-semibold;
 }
 
 /* GITHUB CONTAINER */
@@ -424,6 +428,7 @@ nav a:hover #line2{
 
 /* CONTACT FORM */
 #contact{
+    font-family: gilroy-semibold;
     min-height: 100vh;
     width: 100%;
     background-color: pink;
@@ -545,15 +550,18 @@ form button:hover{
 
 /* SKILLS SECTION STARTED */
 .skills-section {
+    font-family: gilroy-semibold;
     text-align: center;
     padding: 40px;
+    /* background-color: red; */
     background-color: #F2F2F2;
     padding: 40px;
+    font-size: 2vw;
 }
 
 .skills-heading {
     font-size: 2em;
-    margin-bottom: 20px;
+    margin-bottom: 6vw;
 }
 
 .skills-container {
@@ -592,3 +600,79 @@ form button:hover{
 }
 
 /* SKILLS SECTION ENDED */
+
+
+/*PROJECT SECTION CSS*/
+.projects-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 7vw;
+    font-family: gilroy-semibold;
+}
+
+.project {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.project img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.project:hover .project-info {
+    opacity: 1;
+}
+
+.project-info h3 {
+    margin: 0 0 10px 0;
+}
+
+.project-info p {
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+.project-info a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.project-info a:hover {
+    background-color: #0056b3;
+}
+/*PROJECT SECTION END*/
