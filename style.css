@@ -548,9 +548,7 @@ form button:hover{
     text-align: center;
     padding: 40px;
     background-color: #F2F2F2;
-    border-radius: 8px;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-    margin: 40px;
+    padding: 40px;
 }
 
 .skills-heading {
@@ -562,19 +560,20 @@ form button:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 3vw;
 }
 
 .skill {
     text-align: center;
     transition: transform 0.3s ease;
+    
 }
 
 .skill img {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     transition: transform 0.3s ease;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
 }
 
@@ -591,4 +590,5 @@ form button:hover{
 .skill:hover {
     transform: scale(1.1);
 }
+
 /* SKILLS SECTION ENDED */

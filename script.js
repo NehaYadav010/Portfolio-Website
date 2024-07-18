@@ -200,7 +200,7 @@ function skills(){
             skill.addEventListener('mouseenter', () => {
                 skill.style.transform = 'scale(1.1)';
                 const img = skill.querySelector('img');
-                img.style.transform = 'scale(1.2)';
+                img.style.transform = 'scale(1.1)';
             });
     
             skill.addEventListener('mouseleave', () => {
