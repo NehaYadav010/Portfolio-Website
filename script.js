@@ -1,3 +1,8 @@
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('#main'),
+    smooth: true
+});
+
 function valueSetters(){
     gsap.set("nav a",{
         y: "-100%",
