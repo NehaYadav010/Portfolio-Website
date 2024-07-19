@@ -27,15 +27,6 @@ html, body{
     height: 100%;
     width:100%;
 }
-body::-webkit-scrollbar{
-    display:block;
-    width: 5px;
-    background-color: #95C11E;
-}
-body::-webkit-scrollbar-thumb{
-    background-color: #fff;
-    border-radius: 50px;
-}
 
 #loader{
     height: 100vh;

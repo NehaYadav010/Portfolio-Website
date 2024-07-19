@@ -189,11 +189,8 @@ function sendEmail(){
     );
 }
 
-<<<<<<< HEAD
 // DOWNLOAD CV BUTTON
 
-=======
->>>>>>> 29a1c98b889fc0677e8bd68a3c52e6e6d3d47164
 
 
 
