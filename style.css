@@ -212,12 +212,12 @@ nav a:hover #line2{
     letter-spacing: 0.1vw;
 }
 #imager-right img{
-    height: 35vw;
+    height: 30vw;
     width: 25vw;
     border-radius: 1.5vw;
     object-fit: cover;
     object-position: top;
-    transform: translate(-10%, -20%) rotate(-10deg);
+    transform: translate(-10%, -20%) ;
     filter: grayscale();
     transition: all ease 0.5s;
 }
@@ -233,7 +233,7 @@ nav a:hover #line2{
     font-family: gilroy-semibold;
     position: relative;
     display: flex;
-    margin-top: 10vw;
+    margin-top: 1vw;
     padding-bottom: 1.5vw;
 }
 #work::before{
@@ -289,14 +289,14 @@ nav a:hover #line2{
     width: 100%;
     position: relative;
     background-color: #F2F2F2;
-    background-color: red;
+    /* background-color: red; */
 }
 #workflow{
     display: flex;
     align-items: baseline;
     justify-content: space-between;
     font-family: gilroy-light;
-    background-color: goldenrod;
+    /* background-color: goldenrod; */
 }
 #workflow img{
     height: 7vw;
@@ -325,7 +325,7 @@ nav a:hover #line2{
     height: 100vh;
     width:100%;
     /* background-color: #F2F2F2; */
-    background-color: pink;
+    /* background-color: pink; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -340,8 +340,8 @@ nav a:hover #line2{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    /* background-color: #F2F2F2; */
-    background-color: rgb(186, 240, 188);
+    background-color: #F2F2F2;
+    /* background-color: rgb(186, 240, 188); */
     font-family: gilroy-semibold;
     color: #383838;
 }
@@ -431,7 +431,7 @@ nav a:hover #line2{
     font-family: gilroy-semibold;
     min-height: 100vh;
     width: 100%;
-    background-color: pink;
+    background-color: #F2F2F2;
     display: flex;
     flex-direction: column;
     align-items: self-end;
@@ -440,15 +440,13 @@ nav a:hover #line2{
     padding-top: 2vw;
     font-family: gilroy-semibold;
 }
-#main{
-    background-color: #14CF93;
-}
+
 
 #contact form{
     width: 45%;
     /* background-color: red; */
     text-align: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     position: relative;
     padding: 1vw;
     margin-right: 3vw;
@@ -478,7 +476,7 @@ form .input-box{
     background-color: red;
     padding: 15px;
     background: transparent;
-    border: 2px solid rgb(87, 173, 179);
+    border: 2px solid #14CF93;
     outline: none;
     border-radius: 22px;
     font-size: 16px;
@@ -524,7 +522,7 @@ form button:hover{
 
 
 
-/* DOWNLOAD CV BUTTON */
+/* DOWNLOAD CV BUTTON 
 .download-button {
     background-color: #4CAF50;
     color: white;
@@ -557,6 +555,7 @@ form button:hover{
     background-color: #F2F2F2;
     padding: 40px;
     font-size: 2vw;
+    padding-bottom: 5vw;
 }
 
 .skills-heading {
@@ -607,7 +606,7 @@ form button:hover{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: 7vw;
+    margin: 8vw;
     font-family: gilroy-semibold;
 }
 
