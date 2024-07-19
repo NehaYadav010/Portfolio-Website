@@ -1,3 +1,4 @@
+
 function valueSetters(){
     gsap.set("nav a",{
         y: "-100%",
@@ -103,6 +104,7 @@ function animateHomePage(){
     
 }
 
+
 function updateTime() {
     // Get current time in UTC
     const now = new Date();
@@ -178,8 +180,8 @@ function sendEmail(){
       message => {
         if(message == 'OK'){
             Swal.fire({
-                title: "Good job!",
-                text: "You clicked the button!",
+                title: "Success!",
+                text: "Message has been sent!",
                 icon: "success"
               });
         }
@@ -187,29 +189,12 @@ function sendEmail(){
     );
 }
 
+<<<<<<< HEAD
 // DOWNLOAD CV BUTTON
 
+=======
+>>>>>>> 29a1c98b889fc0677e8bd68a3c52e6e6d3d47164
 
-function skills(){
-    document.addEventListener('DOMContentLoaded', () => {
-        const skills = document.querySelectorAll('.skill');
-    
-        skills.forEach(skill => {
-            skill.addEventListener('mouseenter', () => {
-                skill.style.transform = 'scale(1.1)';
-                const img = skill.querySelector('img');
-                img.style.transform = 'scale(1.1)';
-            });
-    
-            skill.addEventListener('mouseleave', () => {
-                skill.style.transform = 'scale(1)';
-                const img = skill.querySelector('img');
-                img.style.transform = 'scale(1)';
-            });
-        });
-    });
-    
-}
 
 
 // Initial call to display the time immediately on page load
